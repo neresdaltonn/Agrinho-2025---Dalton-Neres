@@ -30,3 +30,10 @@ Nosso site tem como objetivo apresentar os principais recursos tecnologicos que 
 - https://www.cepea.org.br/br
 - https://www.instagram.com/p/DJsUVuitLOT/?img_index=1
 - https://www.instagram.com/p/DIWmTGSp11t/
+
+  # APRESENTAÇÃO DOS DIREITOS AUTORAIS - LINK DOS TEXTOS:
+- https://www.sistemafaep.org.br/sobre-a-faep/
+- https://www.sistemafaep.org.br/na-30a-edicao-agrinho-festeja-conexao-entre-o-campo-e-a-cidade/
+- https://www.sistemafaep.org.br/agrinho/
+- https://www.climatempo.com.br/
+
