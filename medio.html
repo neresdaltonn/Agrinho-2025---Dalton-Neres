@@ -10,6 +10,16 @@
 
 <body style="padding-top: 80px;">
     <header>
+
+  <div class="acessibilidade-container">
+    <button class="acessibilidade-toggle" onclick="toggleAcessibilidade()">Acessibilidade</button>
+    <div class="acessibilidade-menu" id="acessibilidadeMenu">
+      <button onclick="ajustarFonte('aumentar')" class="font-btn">A+</button>
+      <button onclick="ajustarFonte('diminuir')" class="font-btn">A-</button>
+      <button onclick="toggleContraste()" class="font-btn">Alto Contraste</button>
+    </div>
+  </div>
+
         <div
             style="background-color: #4CAF50; padding: 20px; display: flex; align-items: center; justify-content: space-between;">
             <a href="Logo CIEMM_page-0001.jpg" target="blank">
@@ -93,34 +103,8 @@
             <p style="margin-top: 10px; font-size: 16px; color: #555;">Alunos da turma 3ºB - EXATAS, no 1º dia de aula
                 no último ano do ensino médio</p>
         </div>
-    </section>
 
-    <section class="content-section">
-        <h2>Galeria do Curso</h2>
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="3ºB.jpg" alt="Alunos realizando pinturas" title="Alunos realizando pinturas">
-                <p>ensino médio</p>
-            </div>
-            <div class="gallery-item">
-                <img src="3ºB.jpg" alt="Alunos realizando pinturas" title="Alunos realizando pinturas">
-                <p>ensino médio</p>
-            </div>
-            <div class="gallery-item">
-                <img src="3ºB.jpg" alt="Alunos realizando pinturas" title="Alunos realizando pinturas">
-                <p>ensino médio</p>
-            </div>
-            <div class="gallery-item">
-                <img src="3ºB.jpg" alt="Alunos realizando pinturas" title="Alunos realizando pinturas">
-                <p>ensino médio</p>
-            </div>
-            <div class="gallery-item">
-                <img src="3ºB.jpg" alt="Alunos realizando pinturas" title="Alunos realizando pinturas">
-                <p>ensino médio</p>
-            </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 40px;">
+                <div style="text-align: center; margin-top: 40px;">
             <button onclick="window.location.href='index.html'" style="
       padding: 10px 20px;
       background-color: #4CAF50;
@@ -132,10 +116,43 @@
                 Voltar para a página inicial
             </button>
         </div>
-    </section>
 
+    </section>
 
     <footer class="footer">
         <p>Festejando a Conexão Campo Cidade - Todos os direitos reservados</p>
         <p>Dalton josé Neres - Salto do Lontra-PR</p>
     </footer>
+
+    <script>
+    let tamanhoFonteAtual = 100;
+    let contrasteAtivo = false;
+
+    function ajustarFonte(acao) {
+      if (acao === 'aumentar') {
+        tamanhoFonteAtual += 10;
+      } else if (acao === 'diminuir') {
+        tamanhoFonteAtual = Math.max(60, tamanhoFonteAtual - 10);
+      }
+      document.body.style.fontSize = `${tamanhoFonteAtual}%`;
+    }
+
+    function toggleContraste() {
+      contrasteAtivo = !contrasteAtivo;
+      document.body.classList.toggle('alto-contraste', contrasteAtivo);
+    }
+
+    function toggleAcessibilidade() {
+      const menu = document.getElementById("acessibilidadeMenu");
+      menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+    }
+  </script>
+
+  <script>
+    let contrasteativo = false;
+
+    function toggleContraste() {
+      contrasteAtivo = !contrasteAtivo;
+      document.body.classList.toggle('alto-contraste', contrasteAtivo);
+    }
+  </script>

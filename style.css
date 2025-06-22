@@ -23,15 +23,15 @@ body {
   overflow-x: hidden;
 }
 
-/* Cabeçalho (Menu Principal) */
+/* Cabeçalho */
 header {
-  background-color: #4CAF50;
+  background-color: #4CAF50 !important;
   position: fixed;
   top: 0;
   width: 100%;
   height: 65px;
-  z-index: 1000;
-  box-shadow: none;
+  z-index: 1100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .main-nav ul {
@@ -57,9 +57,99 @@ header {
   color: #000000;
 }
 
+/* Menu de Acessibilidade */
+.acessibilidade-container {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.acessibilidade-toggle {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 10px 5px; /* Menos largura */
+  border-radius: 8px 0 0 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: transform 0.4s ease;
+  writing-mode: vertical-rl;  /* Faz o texto ficar deitado na vertical */
+  text-orientation: mixed;
+}
+
+.acessibilidade-toggle.rotacionado {
+  transform: rotate(90deg);
+}
+
+.acessibilidade-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #000;
+  border-radius: 8px 0 0 8px;
+  padding: 10px;
+  margin-top: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.font-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 4px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.font-btn:hover {
+  background-color: #45a049;
+}
+
+body.alto-contraste {
+  background-color: #000 !important;
+  color: #FFD700 !important;
+}
+
+body.alto-contraste header,
+body.alto-contraste .content-section,
+body.alto-contraste .gallery-item,
+body.alto-contraste .recipe-item,
+body.alto-contraste .produto,
+body.alto-contraste .footer,
+body.alto-contraste .weather-button,
+body.alto-contraste .botao-link,
+body.alto-contraste .ampliar-btn,
+body.alto-contraste .btn-receitas,
+body.alto-contraste .btn-galeria {
+  background-color: #000 !important;
+  color: #FFD700 !important;
+  border: 1px solid #FFD700;
+}
+
+body.alto-contraste a {
+  color: #FFD700 !important;
+}
+
+body.alto-contraste img {
+  filter: brightness(0.8) contrast(1.5);
+}
+
+body.alto-contraste .intro {
+  background: #000 !important;
+  color: #FFD700 !important;
+}
+
 /* Banner */
 .intro {
-  background: linear-gradient(rgba(76, 175, 80, 0.8), rgba(76, 175, 80, 0.8)), url('banner.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(76, 175, 80, 0.8), rgba(76, 175, 80, 0.8));
   color: white;
   text-align: center;
   padding: 160px 20px 100px;
@@ -216,26 +306,20 @@ h2 {
   padding: 40px 20px;
   background-color: #ffffff;
   text-align: center;
-}
-
-.valorizacao h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
 }
 
 .produto {
-  margin: 30px 0;
+  margin: 0;
+  flex: 1 1 calc(25% - 24px);
+  box-sizing: border-box;
+  min-width: 220px;
   text-align: center;
 }
-
 .produto h3 {
-  margin-bottom: 10px;
-}
-
-.grafico {
-  max-width: 90%;
-  height: auto;
-  border: 1px solid #ccc;
   margin-bottom: 10px;
 }
 
@@ -290,16 +374,22 @@ h2 {
 /* Outros estilos */
 .section-buttons {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-wrap: nowrap;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  gap: 16px 24px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .small-btn {
-  padding: 6px 12px;
+  flex: 1;
+  min-width: 100px;
+  padding: 8px 16px;
   font-size: 14px;
   border-radius: 6px;
+  text-align: center;
 }
 
 .instituicao-logo-container {

@@ -6,465 +6,454 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Festejando a Conexão Campo Cidade</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .section-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-
-    .section-buttons .small-btn {
-      flex: 1 1 22%;
-      min-width: 120px;
-      text-align: center;
-      padding: 6px 10px;
-      font-size: 13px;
-    }
-
-    @media (max-width: 500px) {
-      .section-buttons .small-btn {
-        flex: 1 1 45%;
-      }
-    }
-  </style>
 </head>
 
-<body id="topo">
-  <div class="page-container">
+<body id="conteudo">
+  <header>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#introducao">Introdução</a></li>
+        <li><a href="#agrinho">Agrinho</a></li>
+        <li><a href="#faep">FAEP</a></li>
+        <li><a href="#agricultura">Agricultura</a></li>
+        <li><a href="#leite">Leite</a></li>
+        <li><a href="#valorizacao">Mercado</a></li>
+        <li><a href="#conexao">Conexão</a></li>
+        <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+        <li><a href="#climatempo">ClimaTempo</a></li>
+        <li><a href="#agricultura familiar">Essência</a></li>
+        <li><a href="#receitas">Receitas</a></li>
+        <li><a href="#agro">Galeria</a></li>
+        <li><a href="#instituicao">Instituição</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Menu Principal Fixo -->
-    <header>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#introducao">Introdução</a></li>
-          <li><a href="#agrinho">Agrinho</a></li>
-          <li><a href="#faep">FAEP</a></li>
-          <li><a href="#agricultura">Agricultura</a></li>
-          <li><a href="#leite">Leite</a></li>
-          <li><a href="#valorizacao">Valorização</a></li>
-          <li><a href="#conexao">Conexão</a></li>
-          <li><a href="#sustentabilidade">Sustentabilidade</a></li>
-          <li><a href="#climatempo">ClimaTempo</a></li>
-          <li><a href="#agricultura familiar">Essência</a></li>
-          <li><a href="#receitas">Receitas</a></li>
-          <li><a href="#agro">Galeria</a></li>
-          <li><a href="#instituicao">Instituição</a></li>
-        </ul>
-      </nav>
-    </header>
+  <div class="acessibilidade-container">
+    <button class="acessibilidade-toggle" onclick="toggleAcessibilidade()">Acessibilidade</button>
+    <div class="acessibilidade-menu" id="acessibilidadeMenu">
+      <button onclick="ajustarFonte('aumentar')" class="font-btn">A+</button>
+      <button onclick="ajustarFonte('diminuir')" class="font-btn">A-</button>
+      <button onclick="toggleContraste()" class="font-btn">Alto Contraste</button>
+    </div>
+  </div>
 
-    <section class="intro">
-      <h1>Festejando a Conexão Campo Cidade</h1>
-      <p>Bem-vindo ao nosso projeto de conexão entre o campo e a cidade!</p>
-    </section>
+  <section class="intro">
+    <h1>Festejando a Conexão Campo Cidade</h1>
+    <p>Bem-vindo ao nosso projeto de conexão entre o campo e a cidade!</p>
+  </section>
 
-    <!-- Introdução -->
-    <section id="introducao" class="content-section text-left">
-      <h2>Sobre o Projeto</h2>
-      <div class="imagem-wrapper">
-        <img src="Agrinho-Ilustra_04-1.jpg" alt="Descrição da imagem">
-      </div>
-      <p>O concurso de “Programação: Festejando a conexão campo-cidade”, promovido pelo SENAR-PR em parceria com a
-        Secretaria de Estado da Educação do Paraná (SEED-PR), tem como foco a valorização e o estímulo ao ensino de
-        tecnologia e programação no ambiente escolar. Destinado aos estudantes do Ensino Fundamental e Médio da rede
-        pública estadual, o projeto busca proporcionar oportunidades para que os alunos coloquem em prática seus
-        conhecimentos de forma criativa e desafiadora, integrando conteúdos aprendidos em sala com situações reais e
-        significativas.</p>
+  <!-- Introdução -->
+  <section id="introducao" class="content-section text-left">
+    <h2>Sobre o Projeto</h2>
+    <div class="imagem-wrapper">
+      <img src="Agrinho-Ilustra_04-1.jpg" alt="Logo do projeto agrinho" title="Logo do projeto agrinho">
+    </div>
+    <p>O concurso de “Programação: Festejando a conexão campo-cidade”, promovido pelo SENAR-PR em parceria com a
+      Secretaria de Estado da Educação do Paraná (SEED-PR), tem como foco a valorização e o estímulo ao ensino de
+      tecnologia e programação no ambiente escolar. Destinado aos estudantes do Ensino Fundamental e Médio da rede
+      pública estadual, o projeto busca proporcionar oportunidades para que os alunos coloquem em prática seus
+      conhecimentos de forma criativa e desafiadora, integrando conteúdos aprendidos em sala com situações reais e
+      significativas.</p>
 
-      <p>objetivo central do concurso é incentivar o desenvolvimento de habilidades em programação e pensamento
-        computacional, por meio das disciplinas e trilhas voltadas à Programação e Robótica, Matemática II e do Programa
-        Edutech/Games e Programação, que compõem o currículo escolar ampliado. A temática “Festejando a conexão
-        campo-cidade” propõe uma reflexão sobre a importância da integração entre os espaços urbanos e rurais,
-        destacando como a tecnologia pode ser uma ponte entre esses mundos, contribuindo para soluções criativas e
-        sustentáveis. O projeto representa uma importante iniciativa para preparar os jovens para os desafios
-        contemporâneos, promovendo o protagonismo estudantil e a inovação.</p>
-    </section>
+    <p>objetivo central do concurso é incentivar o desenvolvimento de habilidades em programação e pensamento
+      computacional, por meio das disciplinas e trilhas voltadas à Programação e Robótica, Matemática II e do Programa
+      Edutech/Games e Programação, que compõem o currículo escolar ampliado. A temática “Festejando a conexão
+      campo-cidade” propõe uma reflexão sobre a importância da integração entre os espaços urbanos e rurais,
+      destacando como a tecnologia pode ser uma ponte entre esses mundos, contribuindo para soluções criativas e
+      sustentáveis. O projeto representa uma importante iniciativa para preparar os jovens para os desafios
+      contemporâneos, promovendo o protagonismo estudantil e a inovação.</p>
+  </section>
 
-    <!-- Agrinho -->
-    <section id="agrinho" class="content-section text-left">
-      <h2>Sobre o Concurso Agrinho</h2>
-      <div class="imagem-wrapper">
-        <img src="Concurso-Agrinho-2025.jpg" alt="Descrição da imagem">
-      </div>
-      </p>O Programa Agrinho é a maior iniciativa de responsabilidade social do Sistema FAEP, desenvolvido em parceria
-      com o SENAR-PR, Governo do Paraná, prefeituras e diversas instituições. Criado em 1995 e implantado em 1996, o
-      programa já soma mais de 26 anos, mobilizando anualmente cerca de 800 mil alunos e 50 mil professores da educação
-      infantil, fundamental e especial em todo o estado. Seu objetivo é promover temas como saúde, segurança e meio
-      ambiente, especialmente no contexto rural, integrando esses conteúdos ao currículo escolar por meio de material
-      didático exclusivo. Com uma proposta pedagógica baseada na pesquisa e na formação crítica e criativa, o Agrinho se
-      consolidou como uma ferramenta eficaz para a educação transformadora no Paraná.</p>
-    </section>
+  <!-- Agrinho -->
+  <section id="agrinho" class="content-section text-left">
+    <h2>Sobre o Concurso Agrinho</h2>
+    <div class="imagem-wrapper">
+      <img src="Concurso-Agrinho-2025.jpg" alt="Logo da imagem do concurso" title="Logo da imagem do concurso">
+    </div>
+    </p>O Programa Agrinho é a maior iniciativa de responsabilidade social do Sistema FAEP, desenvolvido em parceria
+    com o SENAR-PR, Governo do Paraná, prefeituras e diversas instituições. Criado em 1995 e implantado em 1996, o
+    programa já soma mais de 26 anos, mobilizando anualmente cerca de 800 mil alunos e 50 mil professores da educação
+    infantil, fundamental e especial em todo o estado. Seu objetivo é promover temas como saúde, segurança e meio
+    ambiente, especialmente no contexto rural, integrando esses conteúdos ao currículo escolar por meio de material
+    didático exclusivo. Com uma proposta pedagógica baseada na pesquisa e na formação crítica e criativa, o Agrinho se
+    consolidou como uma ferramenta eficaz para a educação transformadora no Paraná.</p>
+  </section>
 
-    <!-- Sistema FAEP -->
-    <section id="faep" class="content-section text-left">
-      <h2>Sobre o Sistema FAEP</h2>
-      <div class="imagem-wrapper">
-        <img src="Marca-FAEP.png" alt="Descrição da imagem">
-      </div>
-      <p>A Federação da Agricultura do Estado do Paraná (FAEP) é uma instituição privada, criada em 1963 e reconhecida
-        em 1965, com a missão de representar legalmente os produtores rurais do estado, abrangendo a agricultura e a
-        pecuária. Vinculada à Confederação Nacional da Agricultura, orienta Sindicatos Rurais filiados e promove cursos,
-        seminários, fóruns e convenções. Atua na defesa dos interesses econômicos, sociais e ambientais do setor, além
-        de difundir informações técnicas e estratégicas que contribuem para o aumento da produtividade, a melhoria das
-        práticas no campo e a comercialização da produção. Atenta às mudanças do mercado, a FAEP investe na organização
-        política como ferramenta essencial para fortalecer o campo e a qualidade de vida no meio rural.</p>
-    </section>
+  <!-- Sistema FAEP -->
+  <section id="faep" class="content-section text-left">
+    <h2>Sobre o Sistema FAEP</h2>
+    <div class="imagem-wrapper">
+      <img src="Marca-FAEP.png" alt="Logo da empresa FAEP" title="Logo da empresa FAEP">
+    </div>
+    <p>A Federação da Agricultura do Estado do Paraná (FAEP) é uma instituição privada, criada em 1963 e reconhecida
+      em 1965, com a missão de representar legalmente os produtores rurais do estado, abrangendo a agricultura e a
+      pecuária. Vinculada à Confederação Nacional da Agricultura, orienta Sindicatos Rurais filiados e promove cursos,
+      seminários, fóruns e convenções. Atua na defesa dos interesses econômicos, sociais e ambientais do setor, além
+      de difundir informações técnicas e estratégicas que contribuem para o aumento da produtividade, a melhoria das
+      práticas no campo e a comercialização da produção. Atenta às mudanças do mercado, a FAEP investe na organização
+      política como ferramenta essencial para fortalecer o campo e a qualidade de vida no meio rural.</p>
+  </section>
 
-    <!-- Da Semente à Colheita -->
-    <section id="agricultura" class="content-section text-left">
-      <h2>Da Semente à Colheita</h2>
-      <p>A região onde vivo tem uma forte ligação com a produção agrícola, sendo o cultivo de soja, milho, trigo, aveia
-        e feijão as principais culturas desenvolvidas. O trabalho no campo começa muito antes do plantio. O preparo do
-        solo envolve o dessecamento para o controle das ervas daninhas, seguido pelo plantio direto, realizado com o uso
-        de plantadeiras modernas.</p>
+  <!-- Da Semente à Colheita -->
+  <section id="agricultura" class="content-section text-left">
+    <h2>Da Semente à Colheita</h2>
+    <p>A região onde vivo tem uma forte ligação com a produção agrícola, sendo o cultivo de soja, milho, trigo, aveia
+      e feijão as principais culturas desenvolvidas. O trabalho no campo começa muito antes do plantio. O preparo do
+      solo envolve o dessecamento para o controle das ervas daninhas, seguido pelo plantio direto, realizado com o uso
+      de plantadeiras modernas.</p>
 
-      <p>A tecnologia tem sido uma grande aliada no nosso dia a dia. Máquinas como tratores, colheitadeiras e caminhões
-        equipados com tecnologias avançadas, como GPS, piloto automático e sensores, ajudam a resolver diversos
-        problemas e garantem mais eficiência nas tarefas. Além disso, o uso de agrotóxicos controlados também faz parte
-        do manejo para proteção das lavouras.</p>
+    <p>A tecnologia tem sido uma grande aliada no nosso dia a dia. Máquinas como tratores, colheitadeiras e caminhões
+      equipados com tecnologias avançadas, como GPS, piloto automático e sensores, ajudam a resolver diversos
+      problemas e garantem mais eficiência nas tarefas. Além disso, o uso de agrotóxicos controlados também faz parte
+      do manejo para proteção das lavouras.</p>
 
-      <p>O clima é um fator decisivo. É fundamental que chova no momento certo para garantir um plantio bem-sucedido e,
-        ao mesmo tempo, que não ocorram tempestades fortes ou geadas, que poderiam comprometer toda a produção.
-        Felizmente, em nossa região, o clima se adapta bem ao solo, e por isso, não há necessidade de sistemas de
-        irrigação adicionais.</p>
+    <p>O clima é um fator decisivo. É fundamental que chova no momento certo para garantir um plantio bem-sucedido e,
+      ao mesmo tempo, que não ocorram tempestades fortes ou geadas, que poderiam comprometer toda a produção.
+      Felizmente, em nossa região, o clima se adapta bem ao solo, e por isso, não há necessidade de sistemas de
+      irrigação adicionais.</p>
 
-      <p>Mesmo com tantos avanços, ainda enfrentamos desafios importantes. Os altos custos na compra de insumos, os
-        impactos climáticos, a presença de pragas e ervas daninhas, além da baixa nos preços de venda, dificultam a
-        rentabilidade do produtor. A produção em nossa propriedade é voltada para a comercialização, sendo uma das
-        atividades que mais cresce na região, por ser essencial para o abastecimento das cidades.</p>
+    <p>Mesmo com tantos avanços, ainda enfrentamos desafios importantes. Os altos custos na compra de insumos, os
+      impactos climáticos, a presença de pragas e ervas daninhas, além da baixa nos preços de venda, dificultam a
+      rentabilidade do produtor. A produção em nossa propriedade é voltada para a comercialização, sendo uma das
+      atividades que mais cresce na região, por ser essencial para o abastecimento das cidades.</p>
 
-      <p>O uso de adubos e fertilizantes é indispensável para garantir uma colheita produtiva e de qualidade. Eles
-        influenciam diretamente no rendimento dos grãos e na qualidade do que chega à mesa do consumidor. Além disso, o
-        manejo adequado do solo com produtos biológicos ajuda a manter a sustentabilidade e a preservar o meio ambiente.
-      </p>
+    <p>O uso de adubos e fertilizantes é indispensável para garantir uma colheita produtiva e de qualidade. Eles
+      influenciam diretamente no rendimento dos grãos e na qualidade do que chega à mesa do consumidor. Além disso, o
+      manejo adequado do solo com produtos biológicos ajuda a manter a sustentabilidade e a preservar o meio ambiente.
+    </p>
 
-      <p>Já participei de colheitas e posso dizer que é uma experiência surpreendente. Muitas pessoas não imaginam o
-        esforço necessário para que o alimento chegue até suas mesas. A tecnologia tem transformado esse processo, com
-        grandes avanços que facilitam o trabalho e aumentam a produtividade.</p>
+    <p>Já participei de colheitas e posso dizer que é uma experiência surpreendente. Muitas pessoas não imaginam o
+      esforço necessário para que o alimento chegue até suas mesas. A tecnologia tem transformado esse processo, com
+      grandes avanços que facilitam o trabalho e aumentam a produtividade.</p>
 
-      <p>A agricultura familiar tem um papel fundamental na economia e no abastecimento. Ela é a base da produção de
-        alimentos, matéria-prima para indústrias e até mesmo para a produção de roupas. É um setor que movimenta a
-        economia e sustenta a vida em todos os sentidos.</p>
+    <p>A agricultura familiar tem um papel fundamental na economia e no abastecimento. Ela é a base da produção de
+      alimentos, matéria-prima para indústrias e até mesmo para a produção de roupas. É um setor que movimenta a
+      economia e sustenta a vida em todos os sentidos.</p>
 
-      <p>Com o avanço da mecanização e das tecnologias, acredito que o futuro da agricultura será ainda mais otimizado.
-        O uso de máquinas inteligentes poderá reduzir a necessidade de mão de obra, acelerar processos como plantio,
-        colheita e tratamento, e aumentar a eficiência geral do campo.</p>
+    <p>Com o avanço da mecanização e das tecnologias, acredito que o futuro da agricultura será ainda mais otimizado.
+      O uso de máquinas inteligentes poderá reduzir a necessidade de mão de obra, acelerar processos como plantio,
+      colheita e tratamento, e aumentar a eficiência geral do campo.</p>
 
-      <p>No dia a dia da propriedade rural, atividades como plantio, colheita e manutenção do solo exigem atenção
-        constante. Cuidar da saúde dos animais e da qualidade das plantações também é prioridade. Isso inclui oferecer
-        alimentação de qualidade, manter a vacinação em dia e realizar acompanhamentos veterinários. Nas lavouras, o
-        suporte de um agrônomo, análises de solo e aplicação de minerais são fundamentais para manter a produtividade.
-      </p>
+    <p>No dia a dia da propriedade rural, atividades como plantio, colheita e manutenção do solo exigem atenção
+      constante. Cuidar da saúde dos animais e da qualidade das plantações também é prioridade. Isso inclui oferecer
+      alimentação de qualidade, manter a vacinação em dia e realizar acompanhamentos veterinários. Nas lavouras, o
+      suporte de um agrônomo, análises de solo e aplicação de minerais são fundamentais para manter a produtividade.
+    </p>
 
-      <p>Quando surgem imprevistos, como falhas em equipamentos ou mudanças climáticas, é importante agir rapidamente e
-        com planejamento, buscando soluções práticas que evitem prejuízos e atrasos. A preparação antecipada ajuda a
-        enfrentar melhor essas situações.</p>
+    <p>Quando surgem imprevistos, como falhas em equipamentos ou mudanças climáticas, é importante agir rapidamente e
+      com planejamento, buscando soluções práticas que evitem prejuízos e atrasos. A preparação antecipada ajuda a
+      enfrentar melhor essas situações.</p>
 
-      <p>Por fim, o uso de tecnologias como aplicativos, sensores e drones trouxe melhorias significativas. Com eles,
-        conseguimos identificar pragas, doenças do solo e outros problemas com mais precisão e agilidade, garantindo um
-        manejo mais eficiente e resultados superiores na produção.</p>
+    <p>Por fim, o uso de tecnologias como aplicativos, sensores e drones trouxe melhorias significativas. Com eles,
+      conseguimos identificar pragas, doenças do solo e outros problemas com mais precisão e agilidade, garantindo um
+      manejo mais eficiente e resultados superiores na produção.</p>
 
-      <p><strong>Depoimento de: Vitor Nunes e Vitor Fontana</strong></p>
-      </p>
-    </section>
+    <p><strong>Depoimento de: Vitor Nunes e Vitor Fontana</strong></p>
+    </p>
+  </section>
 
-    <!-- Produção Leiteira -->
-    <section id="leite" class="content-section text-left">
-      <h2>Do Campo ao Copo</h2>
-      <p>Tenho uma ligação direta com o campo e com a produção de leite. Trabalho em uma propriedade com cerca de 40
-        vacas leiteiras em produção e aproximadamente 20 novilhas. Já acompanhei de perto toda a rotina de uma
-        propriedade leiteira, ajudando em tarefas como a tratagem dos animais, o momento de repouso e a ordenha, que
-        acontece duas vezes ao dia.</p>
+  <!-- Produção Leiteira -->
+  <section id="leite" class="content-section text-left">
+    <h2>Do Campo ao Copo</h2>
+    <p>Tenho uma ligação direta com o campo e com a produção de leite. Trabalho em uma propriedade com cerca de 40
+      vacas leiteiras em produção e aproximadamente 20 novilhas. Já acompanhei de perto toda a rotina de uma
+      propriedade leiteira, ajudando em tarefas como a tratagem dos animais, o momento de repouso e a ordenha, que
+      acontece duas vezes ao dia.</p>
 
-      <p>O que mais me chama a atenção na rotina de quem produz leite é o compromisso diário. É preciso acordar muito
-        cedo e estar sempre presente, cuidando de cada detalhe com dedicação.</p>
+    <p>O que mais me chama a atenção na rotina de quem produz leite é o compromisso diário. É preciso acordar muito
+      cedo e estar sempre presente, cuidando de cada detalhe com dedicação.</p>
 
-      <p>Sei como o leite que chega à mesa das pessoas é produzido. Após a ordenha, ele é armazenado em um resfriador e
-        depois recolhido por uma empresa, como a Latco, que faz o transporte e o processamento.</p>
+    <p>Sei como o leite que chega à mesa das pessoas é produzido. Após a ordenha, ele é armazenado em um resfriador e
+      depois recolhido por uma empresa, que faz o transporte e o processamento.</p>
 
-      <p>Acredito que as pessoas da cidade têm consciência da importância do trabalho do produtor rural. Elas sabem que
-        é um trabalho feito com seriedade e qualidade.</p>
+    <p>Acredito que as pessoas da cidade têm consciência da importância do trabalho do produtor rural. Elas sabem que
+      é um trabalho feito com seriedade e qualidade.</p>
 
-      <p>Na minha opinião, a parte mais difícil desse trabalho é quando o animal adoece, pois exige um cuidado especial
-        e, muitas vezes, o acompanhamento de um profissional. Por outro lado, uma das partes mais gratificantes é a
-        tratagem dos animais, pois envolve alimentar bem cada um deles, garantindo sua saúde e bem-estar.</p>
+    <p>Na minha opinião, a parte mais difícil desse trabalho é quando o animal adoece, pois exige um cuidado especial
+      e, muitas vezes, o acompanhamento de um profissional. Por outro lado, uma das partes mais gratificantes é a
+      tratagem dos animais, pois envolve alimentar bem cada um deles, garantindo sua saúde e bem-estar.</p>
 
-      <p>Gostaria que as pessoas da cidade soubessem que a produção de leite exige muito esforço e atenção. É um
-        trabalho que demanda tempo, dedicação e muito cuidado, e que hoje conta com o apoio da tecnologia e da
-        industrialização para garantir qualidade e segurança.</p>
+    <p>Gostaria que as pessoas da cidade soubessem que a produção de leite exige muito esforço e atenção. É um
+      trabalho que demanda tempo, dedicação e muito cuidado, e que hoje conta com o apoio da tecnologia e da
+      industrialização para garantir qualidade e segurança.</p>
 
-      <p>Mostrar o dia a dia no campo por meio de fotos e vídeos é uma forma importante de aproximar cidade e campo.
-        Isso ajuda as pessoas a entenderem melhor como funciona a produção e a valorizarem ainda mais o trabalho
-        realizado.</p>
+    <p>Mostrar o dia a dia no campo por meio de fotos e vídeos é uma forma importante de aproximar cidade e campo.
+      Isso ajuda as pessoas a entenderem melhor como funciona a produção e a valorizarem ainda mais o trabalho
+      realizado.</p>
 
-      <p>O que mais me orgulha no trabalho do produtor rural é o esforço diário e o cuidado dedicado a cada animal. Se
-        eu pudesse mostrar algo do campo para alguém que nunca saiu da cidade, começaria pelos animais. Eles são seres
-        incríveis, demonstram amor, gratidão e estão sempre presentes na nossa rotina.</p>
+    <p>O que mais me orgulha no trabalho do produtor rural é o esforço diário e o cuidado dedicado a cada animal. Se
+      eu pudesse mostrar algo do campo para alguém que nunca saiu da cidade, começaria pelos animais. Eles são seres
+      incríveis, demonstram amor, gratidão e estão sempre presentes na nossa rotina.</p>
 
-      <p>Para quem consome leite, mas nunca viu de perto como ele é produzido, deixo uma mensagem: o leite que você
-        consome é fruto de um trabalho feito com muito cuidado, carinho e dedicação.</p>
+    <p>Para quem consome leite, mas nunca viu de perto como ele é produzido, deixo uma mensagem: o leite que você
+      consome é fruto de um trabalho feito com muito cuidado, carinho e dedicação.</p>
 
-      <p><strong>Depoimento de: Vitor Cikoszki</strong></p>
-    </section>
-
-
-    <section id="valorizacao" class="content-section valorizacao">
-      <h2>Mercado Agroalimentar</h2>
-      <p>O comportamento dos preços de produtos essenciais como arroz, feijão, milho, trigo, soja e leite influencia
-        tanto o
-        campo quanto a cidade. Acompanhe abaixo os dados mais recentes:</p>
-
-      <div class="produto">
-        <h3>Arroz</h3>
-        <a href="arroz.jpg" target="_blank" class="ampliar-btn">Ampliar imagem</a>
-        <img src="arroz.jpg" alt="Gráfico de preço do Arroz" class="grafico-miniatura">
-        <a href="https://www.cepea.esalq.usp.br/br/indicador/arroz.aspx" target="_blank" class="botao-link pequeno">Ver
-          dados</a>
-      </div>
-
-      <div class="produto">
-        <h3>Feijão</h3>
-        <a href="feijão.jpeg" target="_blank" class="ampliar-btn">Ampliar imagem</a>
-        <img src="feijão.jpeg" alt="Gráfico de preço do Feijão" class="grafico-miniatura">
-        <a href="https://www.cepea.org.br/br/indicador/feijao.aspx" target="_blank" class="botao-link pequeno">Ver
-          dados</a>
-      </div>
-
-      <div class="produto">
-        <h3>Milho</h3>
-        <a href="milho.jpg" target="_blank" class="ampliar-btn">Ampliar imagem</a>
-        <img src="milho.jpg" alt="Gráfico de preço do Milho" class="grafico-miniatura">
-        <a href="https://www.cepea.esalq.usp.br/br/indicador/milho.aspx" target="_blank" class="botao-link pequeno">Ver
-          dados</a>
-      </div>
-
-      <div class="produto">
-        <h3>Trigo</h3>
-        <a href="trigo.jpg" target="_blank" class="ampliar-btn">Ampliar imagem</a>
-        <img src="trigo.jpg" alt="Gráfico de preço do Trigo" class="grafico-miniatura">
-        <a href="https://www.cepea.esalq.usp.br/br/indicador/trigo.aspx" target="_blank" class="botao-link pequeno">Ver
-          dados</a>
-      </div>
-
-      <div class="produto">
-        <h3>Soja</h3>
-        <a href="soja.jpg" target="_blank" class="ampliar-btn">Ampliar imagem</a>
-        <img src="soja.jpg" alt="Gráfico de preço do Soja" class="grafico-miniatura">
-        <a href="https://www.cepea.esalq.usp.br/br/indicador/soja.aspx" target="_blank" class="botao-link pequeno">Ver
-          dados</a>
-      </div>
-
-      <div class="produto">
-        <h3>Leite</h3>
-        <a href="leite - grafico.jpg" target="_blank" class="ampliar-btn">Ampliar imagem</a>
-        <img src="leite - grafico.jpg" alt="Gráfico de preço do Leite" class="grafico-miniatura">
-        <a href="https://www.cepea.org.br/br/indicador/leite.aspx" target="_blank" class="botao-link pequeno">Ver
-          dados</a>
-      </div>
-
-      <div class="produto">
-        <h3>Algodão</h3>
-        <a href="algodão.jpg" target="_blank" class="ampliar-btn">Ampliar imagem</a>
-        <img src="algodão.jpg" alt="Gráfico de preço do Algodão" class="grafico-miniatura">
-        <a href="https://www.cepea.org.br/br/indicador/algodao.aspx" target="_blank" class="botao-link pequeno">Ver
-          dados</a>
-      </div>
-
-      <div class="produto">
-        <h3>Aveia</h3>
-        <a href="aveia.png" target="_blank" class="ampliar-btn">Ampliar imagem</a>
-        <img src="aveia.png" alt="Gráfico de preço da Aveia" class="grafico-miniatura">
-        <a href="https://www.agrolink.com.br/cotacoes/graos/aveia" target="_blank" class="botao-link pequeno">Ver
-          dados</a>
-      </div>
-    </section>
+    <p><strong>Depoimento de: Vitor Cikoszki</strong></p>
+  </section>
 
 
-    <!-- Conexão -->
-    <section id="conexao" class="content-section">
-      <h2>Conexão Campo-Cidade</h2>
-      <div class="imagem-wrapper">
-        <img src="t,iiiii.jpg" alt="Descrição da imagem">
-      </div>
-      </p>A relação entre campo e cidade vai muito além da produção de alimentos, envolvendo conexões econômicas,
-      tecnológicas, sociais, ambientais e culturais que sustentam toda a cadeia produtiva do país. Diversas áreas da
-      economia urbana dependem diretamente do meio rural, como a geração de energia limpa por meio da biomassa e do
-      biogás, a produção de algodão para a indústria têxtil, o fornecimento de etanol da cana-de-açúcar para os
-      combustíveis e o uso de tecnologias desenvolvidas nas cidades, como drones e sensores, para aumentar a
-      produtividade agrícola. Essa interdependência exige ações estratégicas como a integração da educação rural e
-      urbana, a melhoria da infraestrutura logística, o acesso facilitado à tecnologia no campo e o incentivo à
-      agroindustrialização, o que gera emprego e valoriza a produção local. Os benefícios de uma conexão mais
-      estruturada incluem desenvolvimento econômico equilibrado, segurança alimentar com rastreabilidade, redução do
-      êxodo rural, sustentabilidade ambiental e fortalecimento da cultura e da identidade regional. Assim, conectar
-      campo e cidade é uma estratégia de futuro que promove decisões mais conscientes por parte de consumidores,
-      profissionais e cidadãos, além de reforçar a importância da sustentabilidade, da inovação tecnológica e da
-      agricultura familiar como pilares fundamentais para transformar a forma como produzimos, consumimos e nos
-      relacionamos com a terra.</p>
-    </section>
+  <section id="valorizacao" class="content-section valorizacao">
+    <h2>Mercado Agroalimentar</h2>
+    <p>O comportamento dos preços de produtos essenciais como arroz, feijão, milho, trigo, soja e leite influencia
+      tanto o
+      campo quanto a cidade. Acompanhe abaixo os dados mais recentes:</p>
 
-    <!-- Sustentabilidade -->
-    <section id="sustentabilidade" class="content-section">
-      <h2>Sustentabilidade: Muito Além do Imaginável</h2>
-      <div class="imagem-wrapper">
-        <img src="pilares-da-sustentabilidade.jpg" alt="Descrição da imagem">
-      </div>
-      </p>A sustentabilidade vai muito além de apenas cuidar da natureza, sendo uma forma de produzir que respeita o
-      meio ambiente, garante renda justa para quem trabalha no campo e valoriza todas as pessoas envolvidas na cadeia
-      produtiva. <strong>Ela se baseia em três pilares principais: ambiental, que cuida dos recursos naturais através de
-        práticas como o uso racional da água, rotação de culturas, energia limpa e valorização da produção local; o
-        econômico, que assegura dignidade ao produtor ao agregar valor aos seus produtos e garantir o acesso a mercados
-        justos com itens como doces, queijos e geleias artesanais; e o social, que promove inclusão, qualidade de vida e
-        preservação da cultura rural, mantendo vivas as histórias, os saberes e os modos de vida do campo.</strong> Além
-      disso, a
-      tecnologia tem se mostrado uma grande aliada, funcionando como uma ponte entre tradição e inovação,
-      potencializando a sabedoria do agricultor. Ferramentas digitais, aplicativos, sensores e dados estão
-      revolucionando a produção agrícola, com exemplos práticos como aplicativos de previsão climática para o
-      planejamento do plantio, drones que monitoram lavouras com precisão para evitar desperdícios, sistemas de
-      irrigação automatizados que economizam água e tempo, e plataformas de venda digital que conectam diretamente o
-      produtor ao consumidor final, eliminando atravessadores. Muitas dessas tecnologias, desenvolvidas nos centros
-      urbanos, estão sendo aplicadas no campo, tornando a produção mais eficiente, competitiva e sustentável, sem que o
-      agricultor perca sua identidade e raízes.</p>
-    </section>
+    <div class="produto">
+      <h3>Algodão</h3>
+      <a href="algodão.jpg" target="_blank" class="ampliar-btn">Ampliar imagem</a>
+      <a href="https://www.cepea.org.br/br/indicador/algodao.aspx" target="_blank" class="botao-link pequeno">Ver
+        dados</a>
+      <img src="algodão.jpg" alt="Gráfico de preço do Algodão" title="Gráfico de preço do Algodão"
+        class="grafico-miniatura">
+    </div>
 
-    <!-- Climatempo -->
-    <section id="climatempo" class="content-section">
-      <h2>Previsão do Tempo - REGIÕES DO PARANÁ</h2>
-      <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/6826/paranadoeste-pr" target="_blank"
-        class="weather-button">Previsão - Região Centro Ocidental Paranaense</a>
-      <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/1317/lapa-pr" target="_blank"
-        class="weather-button">Previsão - Região Centro Oriental Paranaense</a>
-      <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/269/guarapuava-pr" target="_blank"
-        class="weather-button">Previsão - Região Centro Sul Paranaense</a>
-      <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/271/curitiba-pr" target="_blank"
-        class="weather-button">Previsão - Região Metropolitana de Curitiba</a>
-      <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/278/maringa-pr" target="_blank"
-        class="weather-button">Previsão - Região Noroeste Paranaense</a>
-      <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/277/londrina-pr" target="_blank"
-        class="weather-button">Previsão - Região Norte Central Paranaense</a>
-      <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/276/jacarezinho-pr" target="_blank"
-        class="weather-button">Previsão - Região Norte Pioneiro Paranaense</a>
-      <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/268/cascavel-pr" target="_blank"
-        class="weather-button">Previsão - Região Oeste Paranaense</a>
-      <a href="https://www.climatempo.com.br/previsao-do-tempo/litoral/889/dematinhos-pr" target="_blank"
-        class="weather-button">Previsão - Região Sudeste Paranaense</a>
-      <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/1310/franciscobeltrao-pr" target="_blank"
-        class="weather-button">Previsão - Região Sudoeste Paranaense</a>
-    </section>
+    <div class="produto">
+      <h3>Arroz</h3>
+      <a href="arroz.jpg" target="_blank" class="ampliar-btn">Ampliar imagem</a>
+      <a href="https://www.cepea.esalq.usp.br/br/indicador/arroz.aspx" target="_blank" class="botao-link pequeno">Ver
+        dados</a>
+      <img src="arroz.jpg" alt="Gráfico de preço do Arroz" title="Gráfico de preço do Arroz" class="grafico-miniatura">
+    </div>
 
-    <!-- Agricultura Familiar -->
-    <section id="agricultura familiar" class="content-section">
-      <h2> A importância da Agricultura Familiar</h2>
-      <div class="imagem-wrapper">
-        <img src="images.jpg" alt="Descrição da imagem">
-      </div>
-      </p>No Brasil, a agricultura familiar é responsável por mais de 70% dos alimentos que chegam à nossa mesa, sendo
-      fundamental não apenas para a segurança alimentar, mas também para a preservação da cultura alimentar, da
-      biodiversidade e da economia local. Esse modelo de produção gera renda e emprego no meio rural, mantém vivos
-      saberes e práticas tradicionais, valoriza alimentos produzidos com cuidado e identidade, promove a diversidade
-      produtiva essencial para uma dieta equilibrada e fortalece circuitos curtos de comercialização, como feiras e
-      mercados locais. Apoiar a agricultura familiar significa investir em um sistema de produção que respeita o meio
-      ambiente, valoriza as pessoas e preserva a cultura de cada região.</p>
-    </section>
+    <div class="produto">
+      <h3>Aveia</h3>
+      <a href="aveia.png" target="_blank" class="ampliar-btn">Ampliar imagem</a>
+      <a href="https://www.agrolink.com.br/cotacoes/graos/aveia" target="_blank" class="botao-link pequeno">Ver
+        dados</a>
+      <img src="aveia.png" alt="Gráfico de preço da Aveia" title="Gráfico de preço da Aveia" class="grafico-miniatura">
+    </div>
 
-    <section id="receitas" class="content-section">
-      <h2>Receitas do Campo</h2>
-      <p>E é justamente por tudo isso que as receitas ganham um espaço especial neste
-        projeto. Mais do que ensinar a preparar um prato, as receitas ligadas ao agro nos
-        contam histórias, revelam costumes e mostram o quanto o campo está presente nos
-        sabores da nossa vida. <strong>CLIQUE NO BOTÃO E ACESSE NOSSAS RECEITAS!</strong></p>
-      <a href="receitas.html" class="btn-receitas">Ver Receitas</a>
-    </section>
+    <div class="produto">
+      <h3>Feijão</h3>
+      <a href="feijão.jpeg" target="_blank" class="ampliar-btn">Ampliar imagem</a>
+      <a href="https://www.cepea.org.br/br/indicador/feijao.aspx" target="_blank" class="botao-link pequeno">Ver
+        dados</a>
+      <img src="feijão.jpeg" alt="Gráfico de preço do Feijão" title="Gráfico de preço do Feijão"
+        class="grafico-miniatura">
+    </div>
 
-    <style>
-      .btn-receitas {
-        display: inline-block;
-        margin-top: 10px;
-        padding: 10px 20px;
-        background-color: #28a745;
-        color: white;
-        border-radius: 6px;
-        text-decoration: none;
-        font-weight: bold;
-      }
+    <div class="produto">
+      <h3>Leite</h3>
+      <a href="leite - grafico.jpg" target="_blank" class="ampliar-btn">Ampliar imagem</a>
+      <a href="https://www.cepea.org.br/br/indicador/leite.aspx" target="_blank" class="botao-link pequeno">Ver
+        dados</a>
+      <img src="leite - grafico.jpg" alt="Gráfico de preço do Leite" title="Gráfico de preço do Leite"
+        class="grafico-miniatura">
+    </div>
 
-      .btn-receitas:hover {
-        background-color: #1e7e34;
-      }
-    </style>
+    <div class="produto">
+      <h3>Milho</h3>
+      <a href="milho.jpg" target="_blank" class="ampliar-btn">Ampliar imagem</a>
+      <a href="https://www.cepea.esalq.usp.br/br/indicador/milho.aspx" target="_blank" class="botao-link pequeno">Ver
+        dados</a>
+      <img src="milho.jpg" alt="Gráfico de preço do Milho" title="Gráfico de preço do Milho" class="grafico-miniatura">
+    </div>
 
-    <section id="agro" class="content-section">
-      <h2>Galeria do Agro</h2>
-      <p>Veja as imagens e informações do campo na nossa galeria.</p>
-      <a href="galeria.html" class="btn-galeria">Acessar Galeria</a>
-    </section>
+    <div class="produto">
+      <h3>Soja</h3>
+      <a href="soja.jpg" target="_blank" class="ampliar-btn">Ampliar imagem</a>
+      <a href="https://www.cepea.esalq.usp.br/br/indicador/soja.aspx" target="_blank" class="botao-link pequeno">Ver
+        dados</a>
+      <img src="soja.jpg" alt="Gráfico de preço do Soja" title="Gráfico de preço do Soja" class="grafico-miniatura">
+    </div>
 
-    <style>
-      .btn-galeria {
-        display: inline-block;
-        margin-top: 10px;
-        padding: 10px 20px;
-        background-color: #4CAF50;
-        color: white;
-        border-radius: 6px;
-        text-decoration: none;
-        font-weight: bold;
-      }
+    <div class="produto">
+      <h3>Trigo</h3>
+      <a href="trigo.jpg" target="_blank" class="ampliar-btn">Ampliar imagem</a>
+      <a href="https://www.cepea.esalq.usp.br/br/indicador/trigo.aspx" target="_blank" class="botao-link pequeno">Ver
+        dados</a>
+      <img src="trigo.jpg" alt="Gráfico de preço do Trigo" title="Gráfico de preço do Trigo" class="grafico-miniatura">
+    </div>
+  </section>
 
-      .btn-galeria:hover {
-        background-color: #4CAF50;
-      }
-    </style>
+  <!-- Conexão -->
+  <section id="conexao" class="content-section">
+    <h2>Conexão Campo-Cidade</h2>
+    <div class="imagem-wrapper">
+      <img src="t,iiiii.jpg" alt="Imagem a qual representa a conexão entre Campo e Cidade"
+        title="Imagem a qual representa a conexão entre Campo e Cidade">
+    </div>
+    </p>A relação entre campo e cidade vai muito além da produção de alimentos, envolvendo conexões econômicas,
+    tecnológicas, sociais, ambientais e culturais que sustentam toda a cadeia produtiva do país. Diversas áreas da
+    economia urbana dependem diretamente do meio rural, como a geração de energia limpa por meio da biomassa e do
+    biogás, a produção de algodão para a indústria têxtil, o fornecimento de etanol da cana-de-açúcar para os
+    combustíveis e o uso de tecnologias desenvolvidas nas cidades, como drones e sensores, para aumentar a
+    produtividade agrícola. Essa interdependência exige ações estratégicas como a integração da educação rural e
+    urbana, a melhoria da infraestrutura logística, o acesso facilitado à tecnologia no campo e o incentivo à
+    agroindustrialização, o que gera emprego e valoriza a produção local. Os benefícios de uma conexão mais
+    estruturada incluem desenvolvimento econômico equilibrado, segurança alimentar com rastreabilidade, redução do
+    êxodo rural, sustentabilidade ambiental e fortalecimento da cultura e da identidade regional. Assim, conectar
+    campo e cidade é uma estratégia de futuro que promove decisões mais conscientes por parte de consumidores,
+    profissionais e cidadãos, além de reforçar a importância da sustentabilidade, da inovação tecnológica e da
+    agricultura familiar como pilares fundamentais para transformar a forma como produzimos, consumimos e nos
+    relacionamos com a terra.</p>
+  </section>
 
-    <section id="instituicao" class="content-section">
-      <div class="instituicao-logo-container">
-        <a href="Logo CIEMM_page-0001.jpg" target="blank">
-          <img src="Logo CIEMM_page-0001.jpg" alt="Logo do CEIMM - Colégio Estadual Irmã Maria Margarida"
-            title="Logo do CEIMM - Colégio Estadual Irmã Maria Margarida">
-        </a>
-        <div class="instituicao-texto">
-          <h2>Por trás do nome CEIMM</h2>
+  <!-- Sustentabilidade -->
+  <section id="sustentabilidade" class="content-section">
+    <h2>Sustentabilidade: Muito Além do Imaginável</h2>
+    <div class="imagem-wrapper">
+      <img src="pilares-da-sustentabilidade.jpg" alt="Imagem a qual representa a Sustentabilidade no meio agrícola"
+        title="Imagem a qual representa a Sustentabilidade no meio agrícola">
+    </div>
+    </p>A sustentabilidade vai muito além de apenas cuidar da natureza, sendo uma forma de produzir que respeita o
+    meio ambiente, garante renda justa para quem trabalha no campo e valoriza todas as pessoas envolvidas na cadeia
+    produtiva. <strong>Ela se baseia em três pilares principais: ambiental, que cuida dos recursos naturais através de
+      práticas como o uso racional da água, rotação de culturas, energia limpa e valorização da produção local; o
+      econômico, que assegura dignidade ao produtor ao agregar valor aos seus produtos e garantir o acesso a mercados
+      justos com itens como doces, queijos e geleias artesanais; e o social, que promove inclusão, qualidade de vida e
+      preservação da cultura rural, mantendo vivas as histórias, os saberes e os modos de vida do campo.</strong> Além
+    disso, a
+    tecnologia tem se mostrado uma grande aliada, funcionando como uma ponte entre tradição e inovação,
+    potencializando a sabedoria do agricultor. Ferramentas digitais, aplicativos, sensores e dados estão
+    revolucionando a produção agrícola, com exemplos práticos como aplicativos de previsão climática para o
+    planejamento do plantio, drones que monitoram lavouras com precisão para evitar desperdícios, sistemas de
+    irrigação automatizados que economizam água e tempo, e plataformas de venda digital que conectam diretamente o
+    produtor ao consumidor final, eliminando atravessadores. Muitas dessas tecnologias, desenvolvidas nos centros
+    urbanos, estão sendo aplicadas no campo, tornando a produção mais eficiente, competitiva e sustentável, sem que o
+    agricultor perca sua identidade e raízes.</p>
+  </section>
 
-          <h3>Sobre a instituição:</h3>
-          <p>A instituição foi criada em 1970, ofertando inicialmente o curso Normal. Teve como iniciativa famílias do
-            município que desejavam que seus filhos tivessem uma formação ou até mesmo dessem continuidade aos estudos.
-          </p>
+  <!-- Climatempo -->
+  <section id="climatempo" class="content-section">
+    <h2>Previsão do Tempo - REGIÕES DO PARANÁ</h2>
+    <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/6826/paranadoeste-pr" target="_blank"
+      class="weather-button">Previsão - Região Centro Ocidental Paranaense</a>
+    <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/1317/lapa-pr" target="_blank"
+      class="weather-button">Previsão - Região Centro Oriental Paranaense</a>
+    <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/269/guarapuava-pr" target="_blank"
+      class="weather-button">Previsão - Região Centro Sul Paranaense</a>
+    <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/271/curitiba-pr" target="_blank"
+      class="weather-button">Previsão - Região Metropolitana de Curitiba</a>
+    <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/278/maringa-pr" target="_blank"
+      class="weather-button">Previsão - Região Noroeste Paranaense</a>
+    <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/277/londrina-pr" target="_blank"
+      class="weather-button">Previsão - Região Norte Central Paranaense</a>
+    <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/276/jacarezinho-pr" target="_blank"
+      class="weather-button">Previsão - Região Norte Pioneiro Paranaense</a>
+    <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/268/cascavel-pr" target="_blank"
+      class="weather-button">Previsão - Região Oeste Paranaense</a>
+    <a href="https://www.climatempo.com.br/previsao-do-tempo/litoral/889/dematinhos-pr" target="_blank"
+      class="weather-button">Previsão - Região Sudeste Paranaense</a>
+    <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/1310/franciscobeltrao-pr" target="_blank"
+      class="weather-button">Previsão - Região Sudoeste Paranaense</a>
+  </section>
 
-          <p>Além do curso Normal, a instituição também ofertou cursos técnicos em Contabilidade e básico em
-            Agropecuária. Até 1991, era responsável pelo ensino de primeiro e segundo grau. A partir dessa data, o
-            ensino primário foi municipalizado.</p>
+  <!-- Agricultura Familiar -->
+  <section id="agricultura familiar" class="content-section">
+    <h2> A importância da Agricultura Familiar</h2>
+    <div class="imagem-wrapper">
+      <img src="images.jpg"
+        alt="Imagem de uma familia batalhadora, a qual representa a importancia da Agricultura Familiar"
+        title="Imagem de uma familia batalhadora, a qual representa a importancia da Agricultura Familiar">
+    </div>
+    </p>No Brasil, a agricultura familiar é responsável por mais de 70% dos alimentos que chegam à nossa mesa, sendo
+    fundamental não apenas para a segurança alimentar, mas também para a preservação da cultura alimentar, da
+    biodiversidade e da economia local. Esse modelo de produção gera renda e emprego no meio rural, mantém vivos
+    saberes e práticas tradicionais, valoriza alimentos produzidos com cuidado e identidade, promove a diversidade
+    produtiva essencial para uma dieta equilibrada e fortalece circuitos curtos de comercialização, como feiras e
+    mercados locais. Apoiar a agricultura familiar significa investir em um sistema de produção que respeita o meio
+    ambiente, valoriza as pessoas e preserva a cultura de cada região.</p>
+  </section>
 
-          </p>Atualmente, a instituição oferece os cursos de Formação de Docentes, Técnico em Agronegócio e o Novo
-          Ensino
-          Médio, atuando nos três períodos.</p>
+  <section id="receitas" class="content-section">
+    <h2>Receitas do Campo</h2>
+    <p>E é justamente por tudo isso que as receitas ganham um espaço especial neste
+      projeto. Mais do que ensinar a preparar um prato, as receitas ligadas ao agro nos
+      contam histórias, revelam costumes e mostram o quanto o campo está presente nos
+      sabores da nossa vida. <strong>CLIQUE NO BOTÃO E ACESSE NOSSAS RECEITAS!</strong></p>
+    <a href="receitas.html" class="btn-receitas">Ver Receitas</a>
+  </section>
 
-          <h3>Sobre o nome Irmã Maria Margarida:</h3>
-          <p>Irmã Maria Margarida, nascida em Minas Gerais, veio para Salto do Lontra em missão de evangelização. Fazia
-            parte da Congregação do Sagrado Coração de Jesus. Aqui, integrou o grupo de Irmãs Cabrini e se dedicou
-            principalmente à catequese e aos grupos de jovens.</p>
+  <style>
+    .btn-receitas {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-          </p>Foi responsável pelos encontros de formação e atuou como professora no curso Normal. Posteriormente,
-          retornou para Mariana, em São Paulo, em busca de aperfeiçoar seus conhecimentos.</p>
+    .btn-receitas:hover {
+      background-color: #1e7e34;
+    }
+  </style>
 
-          <p>Irmã Maria Margarida faleceu em 26 de janeiro de 1977, aos 27 anos, em decorrência de um tumor cerebral.
-            Quem conviveu com ela relata que era uma mulher muito simples, humilde, afável, cheia de ânimo e disposição.
-          </p>
+  <section id="agro" class="content-section">
+    <h2>Galeria do Agro</h2>
+    <p>Veja as imagens e informações do campo na nossa galeria.</p>
+    <a href="galeria.html" class="btn-galeria">Acessar Galeria</a>
+  </section>
 
-          <h3>Formações Disponíveis:</h3>
-          <div class="section-buttons">
-            <a href="medio.html" class="botao-link small-btn">Ensino Médio</a>
-            <a href="docentes.html" class="botao-link small-btn">Formação de Docentes</a>
-            <a href="agro.html" class="botao-link small-btn">Técnico em Agronegócio</a>
-            <a href="gremio.html" class="botao-link small-btn">Grêmio Estudantil</a>
-          </div>
+  <style>
+    .btn-galeria {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn-galeria:hover {
+      background-color: #4CAF50;
+    }
+  </style>
+
+  <section id="instituicao" class="content-section">
+    <div class="instituicao-logo-container">
+      <a href="Logo CIEMM_page-0001.jpg" target="blank">
+        <img src="Logo CIEMM_page-0001.jpg" alt="Logo do CEIMM - Colégio Estadual Irmã Maria Margarida"
+          title="Logo do CEIMM - Colégio Estadual Irmã Maria Margarida">
+      </a>
+      <div class="instituicao-texto">
+        <h2>Por trás do nome CEIMM</h2>
+
+        <h3>Sobre a instituição:</h3>
+        <p>A instituição foi criada em 1970, ofertando inicialmente o curso Normal. Teve como iniciativa famílias do
+          município que desejavam que seus filhos tivessem uma formação ou até mesmo dessem continuidade aos estudos.
+        </p>
+
+        <p>Além do curso Normal, a instituição também ofertou cursos técnicos em Contabilidade e básico em
+          Agropecuária. Até 1991, era responsável pelo ensino de primeiro e segundo grau. A partir dessa data, o
+          ensino primário foi municipalizado.</p>
+
+        </p>Atualmente, a instituição oferece os cursos de Formação de Docentes, Técnico em Agronegócio e o Novo
+        Ensino
+        Médio, atuando nos três períodos.</p>
+
+        <h3>Sobre o nome Irmã Maria Margarida:</h3>
+        <p>Irmã Maria Margarida, nascida em Minas Gerais, veio para Salto do Lontra em missão de evangelização. Fazia
+          parte da Congregação do Sagrado Coração de Jesus. Aqui, integrou o grupo de Irmãs Cabrini e se dedicou
+          principalmente à catequese e aos grupos de jovens.</p>
+
+        </p>Foi responsável pelos encontros de formação e atuou como professora no curso Normal. Posteriormente,
+        retornou para Mariana, em São Paulo, em busca de aperfeiçoar seus conhecimentos.</p>
+
+        <p>Irmã Maria Margarida faleceu em 26 de janeiro de 1977, aos 27 anos, em decorrência de um tumor cerebral.
+          Quem conviveu com ela relata que era uma mulher muito simples, humilde, afável, cheia de ânimo e disposição.
+        </p>
+
+        <h3>Formações Disponíveis:</h3>
+        <div class="section-buttons">
+          <a href="medio.html" class="botao-link small-btn">Ensino Médio</a>
+          <a href="docentes.html" class="botao-link small-btn">Formação de Docentes</a>
+          <a href="agro.html" class="botao-link small-btn">Técnico em Agronegócio</a>
+          <a href="gremio.html" class="botao-link small-btn">Grêmio Estudantil</a>
         </div>
       </div>
-  </div>
+    </div>
+    </div>
   </section>
 
   <!-- Botão Voltar ao Topo -->
-  <a href="#topo" class="back-to-top" aria-label="Voltar ao início">↑</a>
+  <a href="#conteudo" class="back-to-top" aria-label="Voltar ao início">↑</a>
 
   <section id="contato" class="content-section">
     <h2>Entre em Contato / Demais Informações</h2>
@@ -490,6 +479,38 @@
     <p>Dalton josé Neres - Salto do Lontra-PR</p>
   </footer>
 
-</body>
+  <script>
+    let tamanhoFonteAtual = 100;
+    let contrasteAtivo = false;
 
+    function ajustarFonte(acao) {
+      if (acao === 'aumentar') {
+        tamanhoFonteAtual += 10;
+      } else if (acao === 'diminuir') {
+        tamanhoFonteAtual = Math.max(60, tamanhoFonteAtual - 10);
+      }
+      document.body.style.fontSize = `${tamanhoFonteAtual}%`;
+    }
+
+    function toggleContraste() {
+      contrasteAtivo = !contrasteAtivo;
+      document.body.classList.toggle('alto-contraste', contrasteAtivo);
+    }
+
+    function toggleAcessibilidade() {
+      const menu = document.getElementById("acessibilidadeMenu");
+      menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+    }
+  </script>
+
+  <script>
+    let contrasteativo = false;
+
+    function toggleContraste() {
+      contrasteAtivo = !contrasteAtivo;
+      document.body.classList.toggle('alto-contraste', contrasteAtivo);
+    }
+  </script>
+
+</body>
 </html>
