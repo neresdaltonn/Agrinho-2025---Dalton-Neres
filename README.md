@@ -8,7 +8,7 @@
 - Núcleo Regional de Dois Vizinhos-PR
 
 # OBJETIVO DO SITE:
-Nosso site tem como objetivo apresentar os principais recursos tecnologicos que estão ligados diretamente ao CAMPO como até mesmo a CIDADE. No site aborda os principais temas relacionados a AGRICULTURA, visando conectar ambos os lados, "CAMPO E CIDADE".
+O objetivo do nosso site é apresentar os principais recursos tecnológicos que conectam diretamente o campo e a cidade. Abordamos temas relevantes da agricultura, demonstrando como as inovações do campo impactam a vida urbana e como a cidade também influencia o meio rural. Nosso propósito é fortalecer essa conexão e valorizar a importância de ambos os ambientes para a sociedade.
 
 # APRESENTAÇÃO DOS DIREITOS AUTORAIS - LINK DAS IMAGENS:
 - https://www.cnabrasil.org.br/storage/arquivos/Agrinho-1_2024-05-20-175128_kthr.jpg
