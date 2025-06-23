@@ -31,9 +31,14 @@ O objetivo do nosso site é apresentar os principais recursos tecnológicos que 
 - https://www.instagram.com/p/DJsUVuitLOT/?img_index=1
 - https://www.instagram.com/p/DIWmTGSp11t/
 
-  # APRESENTAÇÃO DOS DIREITOS AUTORAIS - LINK DOS TEXTOS:
+# APRESENTAÇÃO DOS DIREITOS AUTORAIS - LINK DOS TEXTOS:
 - https://www.sistemafaep.org.br/sobre-a-faep/
 - https://www.sistemafaep.org.br/na-30a-edicao-agrinho-festeja-conexao-entre-o-campo-e-a-cidade/
 - https://www.sistemafaep.org.br/agrinho/
 - https://www.climatempo.com.br/
 
+# ESTRUTURA TÉCNICA:
+Para o desenvolvimento do nosso site, utilizamos uma estrutura simples e funcional, com o objetivo de facilitar a navegação e garantir uma boa experiência ao usuário.
+
+- index.html - Responsável por organizar todo o conteúdo textual e estrutural do site, como títulos, textos, imagens e links.
+- style.css - Toda a parte visual do site foi personalizada nesse arquivo, onde definimos cores, fontes, tamanhos de texto, espaçamentos e o layout das seções.
